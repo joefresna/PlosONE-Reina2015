@@ -1,0 +1,75 @@
+/************************************************/
+/***************** Dependencies *****************/
+/************************************************/
+
+* JRE 1.7 (recommended version 1.7.0_11)
+* Mason 16
+	+ official download source: http://cs.gmu.edu/~eclab/projects/mason/
+* JMF
+	+ official download source: http://www.oracle.com/technetwork/java/javase/download-142937.html
+* iText (recommended version 1.2)
+	+ official download source: http://itextpdf.com/download.php
+* jCommon (recommended version 1.0.16)
+* jFreeChart (recommended version 1.0.13)
+	+ official download source: http://www.jfree.org/jfreechart/	
+* [optional] Eclipse (recommended version 4.4.1) https://eclipse.org/
+
+POSSIBILITY TO DOWNLOAD ALL THE REQUIRED DEPENDENCIES (except Eclipse) FROM: http://cs.gmu.edu/~eclab/projects/mason/
+
+/************************************************/
+/***************** Installation *****************/
+/************************************************/
+
+1. Download the source code into the dir <PlosONE-Reina2015>
+
+2. Move the dependencies (jar files) into the <PlosONE-Reina2015>/dependencies
+
+3. Import the project in Eclipse
+	+ File > Import > General > Existing Projects into workspace
+	+ Select the dir <PlosONE-Reina2015>
+
+
+/*************************************************/
+/******************* Execution *******************/
+/*************************************************/
+
+*** CASE STUDIES IA AND IB ***
+
+1. Configure the experiment properties through the properties file 
+	<PlosONE-Reina2015>/conf/nospatial.properties
+	
+2. Open (in Eclipse) the file
+	src/nospatial/NoSpatial.java
+	
+3. Run the class
+	(Eclipse-menu) Run > Run
+
+
+*** CASE STUDY II ***
+
+1. Configure the experiment properties through the properties file 
+	<PlosONE-Reina2015>/conf/spatial.properties
+	
+2. Open (in Eclipse) the file
+	src/spatial/BestFood.java
+	
+3. Run the class
+	(Eclipse-menu) Run > Run
+	
+4. For a graphical visualization:
+	+ open the file src/spatial/BestFoodWithUI.java
+	+ run the class
+	+ click on play button (triangle)
+
+
+/*************************************************/
+/**************** Check results ******************/
+/*************************************************/
+
+After execution, you find the file 
+    <PlosONE-Reina2015>/results/lastline.txt
+with the population distribution at the end on the experiment.
+The columns in this file are [timestep, population U, population A, population B]
+
+
+Configure the properties files to output more information. 
